@@ -17,5 +17,15 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul> -->
-
+<div>
+  <h1>Available Quotes</h1>
+  <hr>
+  <ul>
+    <li *ngFor='let quote of quotes'>
+        {{quote.quoteName}}
+        {{quote.quoteAuthor}}
+        {{quote.quotePublisher}}
+    </li>
+  </ul>
+</div>
 <router-outlet></router-outlet>
