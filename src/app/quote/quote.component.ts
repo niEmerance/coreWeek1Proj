@@ -9,10 +9,12 @@ import { Quote } from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] =[
-    {quoteName: 'You reap what you sow',quoteAuthor: 'Emerance',quotePublisher:'Josias'},
-    {quoteName: 'I chose to be happy',quoteAuthor: 'Emelyne',quotePublisher:'Josiane'},
+    new Quote('You reap what you sow','Emerance','Josias'),
+    new Quote('I chose to be happy','Emelyne','Josiane'),
   ];
-
+  toggleDetails(index){
+    this.quotes[index].showDetails = !this.quotes[index].showDetails;
+  }
   constructor() { }
 
   ngOnInit() {
