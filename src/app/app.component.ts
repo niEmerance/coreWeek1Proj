@@ -8,8 +8,5 @@ import { Quote } from './quote'
 export class AppComponent {
   title = 'Quotes App';
 
-  quotes:Quote[] =[
-    {quoteName: 'You reap what you sow',quoteAuthor: 'Emerance',quotePublisher:'Josias'},
-    {quoteName: 'I chose to be happy',quoteAuthor: 'Emelyne',quotePublisher:'Josiane'},
-  ];
+  
 }
