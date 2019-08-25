@@ -9,8 +9,8 @@ import { Quote } from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] =[
-    new Quote('You reap what you sow','Emerance','Josias'),
-    new Quote('I chose to be happy','Emelyne','Josiane'),
+    new Quote('You reap what you sow','Emerance','Josias',new Date(2018,3,20)),
+    new Quote('I chose to be happy','Emelyne','Josiane',new Date(2017,5,23)),
   ];
   toggleDetails(index){
     this.quotes[index].showDetails = !this.quotes[index].showDetails;

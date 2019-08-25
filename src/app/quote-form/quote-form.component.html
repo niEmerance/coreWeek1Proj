@@ -1,30 +1,39 @@
 <div class="container-fluid">
     <h2 class="text-center">Create a new Quote</h2>
     <hr>
-    <form>
+    <form #quoteForm='ngForm'>
         <div class="form-group">
   
-            <label for="quoteName">Quote</label>
-            <input type="text" required class="form-control" id="quoteName">
-  
+            <label for="name">Quote</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+              <p>Field is required</p>
+            </div>
         </div>
         <div class="form-group">
   
             <label for="quoteAuthor">Quote Author</label>
-            <input type="text" required class="form-control" id="quoteAuthor">
-  
+            <input class="form-control" id="quoteAuthor" [(ngModel)]="newQuote.quoteAuthor" name="quoteAuthor" #quoteAuthor="ngModel" required>
+            <div [hidden]="quoteAuthor.valid || quoteAuthor.pristine" class="alert alert-danger">
+              <p>Field is required</p>
+            </div>
         </div>
         <div class="form-group">
   
             <label for="quotePublisher">Quote Publisher</label>
-            <input type="text" required class="form-control" id="quotePublisher">
-  
+            <input class="form-control" id="quotePublisher" [(ngModel)]="newQuote.quotePublisher" name="quotePublisher" #quotePublisher="ngModel" required>
+            <div [hidden]="quotePublisher.valid || quotePublisher.pristine" class="alert alert-danger">
+              <p>Field is required</p>
+            </div>
         </div>
         <div class="form-group">
-            <label for="complete">Posted Date</label>
-            <input type='date' id="complete" required>
   
+            <label for="publishDate">Published Date</label>
+            <input type='date' id="complete" [(ngModel)]="newQuote.publishDate" name="publishDate" #publishDate="ngModel" required>
+            <div [hidden]="publishDate.valid || publishDate.pristine" class="alert alert-danger">
+              <p>Date is required</p>
+            </div>
         </div>
-        <button>Post</button>
+        <button type="submit" class="btn btn-success">Add Goal</button>
     </form>
   </div>
