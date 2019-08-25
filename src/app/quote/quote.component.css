@@ -1,0 +1,7 @@
+.content{
+    display: flex;
+    flex-direction: row;
+}
+#form{
+    margin-left: 180px;
+}
