@@ -2,6 +2,11 @@
     display: flex;
     flex-direction: row;
 }
+.content #publish{
+    font-size: 14px;
+    font-style: italic;
+    font-family: serif;
+}
 #form{
     margin-left: 180px;
 }
