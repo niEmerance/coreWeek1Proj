@@ -13,6 +13,7 @@ export class QuoteDetailsComponent implements OnInit {
   quoteRemove(complete:boolean){
       this.isComplete.emit(complete);
   }
+  
   constructor() { }
 
   ngOnInit() {
