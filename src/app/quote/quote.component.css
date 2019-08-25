@@ -5,3 +5,11 @@
 #form{
     margin-left: 180px;
 }
+footer{
+    margin-top: 10px;
+    height: 25px;
+    text-align: center;
+    background-color: black;
+    color: grey;
+    opacity: 0.6;
+}
