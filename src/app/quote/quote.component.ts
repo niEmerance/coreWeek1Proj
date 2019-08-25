@@ -17,11 +17,16 @@ export class QuoteComponent implements OnInit {
   }
   quoteRemove(isComplete, index){
     if (isComplete){
-      let toRemove= confirm(`Are you sure you want to Delete ${this.quotes[index].quoteName} ? `)
+      let toRemove= confirm(`Are you sure you want to Delete this quote ? `)
       if(toRemove){
         this.quotes.splice(index, 1)
       }
     }
+  }
+  addNewQuote(quote){
+    let quoteLength=this.quotes.length;
+    quote.publishDate= new Date(quote.publishDate)
+    this.quotes.push(quote)
   }
   constructor() { }
 
