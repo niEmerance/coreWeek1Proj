@@ -4,11 +4,6 @@ This is the application which help users to create quotes and have those quotes 
 
 ### created by Emerance Niyomufasha
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-
 ## How it works
   
   - you can view available quotes
@@ -22,7 +17,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 |----------------- |-------------------------------------|
 | Angular CLI      | to build the application            |
 | Google chrome    | to check progress of the applicatio |
-| Visual studio    | it was used as text editor                  |
+| Visual studio    | it was used as text editor          |
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Further help
 
